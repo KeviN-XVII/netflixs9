@@ -9,12 +9,11 @@ function App() {
   return (
     <>
       <Netflixnav />
-      {/* <Filmslide title="Trending Now" film="Harry Potter" />
+      <Filmslide title="Trending Now" film="Harry Potter" />
       <Filmslide title="Watch it Again" film="avengers" />
-      <Filmslide title="New Releases" film="Fast" /> */}
-      {/* PAGINA PROFILO */}
-      {/* <Profile/> */}
-      <Settings />
+      <Filmslide title="New Releases" film="Fast" />
+      {/* <Profile /> */}
+      {/* <Settings /> */}
       <Footer />
     </>
   );
