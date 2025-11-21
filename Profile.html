@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./custom-bootstrap.css" />
+  </head>
+  <body class="bg-black">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./assets/netflix_logo.png"
+              alt="Netflix Logo"
+              style="width: 110px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class=""
+              ><img
+                src="./assets/avatar.png"
+                alt="User Avatar"
+                style="width: 35px"
+            /></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tv Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My List</a>
+              </li>
+            </ul>
+
+            <i
+              class="bi bi-search text-white fs-5 d-none d-lg-block"
+              type="submit"
+            ></i>
+            <div class="d-flex align-items-center gap-4 ms-3">
+              <a
+                class="nav-link text-white-50 d-none d-lg-block"
+                aria-current="page"
+                href="#"
+                >KIDS</a
+              >
+              <i class="bi bi-bell-fill text-white fs-5 d-none d-lg-block"></i>
+              <img
+                src="./assets/avatar.png"
+                alt="User Avatar"
+                style="width: 35px"
+                class="d-none d-lg-block"
+              />
+              <i
+                class="bi bi-caret-down-fill text-white fs-6 g-0 d-none d-lg-block"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="text-white">
+      <div
+        class="container d-flex flex-column p-5 p-md-4"
+        style="width: 500px; margin: 50px auto"
+      >
+        <h1 class="fs-1">Edit Profile</h1>
+        <div class="row">
+          <hr class="border border-white-50" />
+          <!-- immagine profilo -->
+          <div class="col-3 d-flex flex-column align-items-center mb-4">
+            <img src="./assets/avatar.png" alt="Avatar" style="width: 130px" />
+          </div>
+          <div class="col-9 d-flex flex-column px-4">
+            <div>
+              <p class="bg-secondary p-2">Strive Student</p>
+              <div class="mb-4 w-50">
+                <label class="form-label fs-5">Language:</label>
+                <select class="form-select bg-black text-white">
+                  <option>English</option>
+                  <option>Italiano</option>
+                  <option>Español</option>
+                </select>
+              </div>
+              <hr class="border border-white-50" />
+            </div>
+            <!-- fine prima parte  -->
+            <div class="d-flex flex-column gap-1">
+              <p class="fs-5 text-secondary">Maturity Settings:</p>
+              <p class="bg-secondary py-1 px-2 d-block w-75 text-center">
+                ALL MATURITY RATINGS
+              </p>
+              <p>Show titles of all maturity ratings for this profile</p>
+              <button class="btn btn-outline-light rounded-0 text-center">
+                EDIT
+              </button>
+              <hr class="border border-white-50" />
+            </div>
+            <!-- fine seconda parte  -->
+            <div class="d-flex flex-column gap-3">
+              <p class="fs-5 text-secondary">Autoplay controls</p>
+              <div class="form-check">
+                <input
+                  class="form-check-input bg-black"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Autoplay next episode in a series on all devices
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input bg-black"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Autoplay previews while browsing on all devices
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border border-white-50" />
+        <div class="d-flex justify-content-center my-4 gap-2">
+          <button class="btn btn-light">SAVE</button>
+          <button class="btn btn-outline-secondary">CANCEL</button>
+          <button class="btn btn-outline-secondary">DELETE PROFILE</button>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
